@@ -1,0 +1,21 @@
+{
+    "Comment": "Orchestrator for Crypto ETL Pipeline",
+    "StartAt": "Extract",
+    "States": {
+      "Extract": {
+        "Type": "Task",
+        "Resource": "arn:aws:lambda:eu-central-1:890742597239:function:extract_crypto_data",
+        "Next": "Transform"
+      },
+      "Transform": {
+        "Type": "Task",
+        "Resource": "arn:aws:lambda:eu-central-1:890742597239:function:transform_crpyto_data:$LATEST",
+        "Next": "Load"
+      },
+      "Load": {
+        "Type": "Task",
+        "Resource": "arn:aws:lambda:eu-central-1:890742597239:function:load_crypto_data:$LATEST",
+        "End": true
+      }
+    }
+  }
