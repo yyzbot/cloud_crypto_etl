@@ -1,4 +1,4 @@
-# Cloud ETL Pipeline for cryptocurrency market snapshot
+# Cloud ETL Pipeline for Cryptocurrency Market Snapshot
 
 This project builds a cloud-native pipeline that extracts real-time cryptocurrency market data from the [CoinGecko API](https://www.coingecko.com/), stores data in **AWS S3 Bucket**, transforms it with **pandas**, and loads it into a **Snowflake** table for visualization in **Google Looker Studio**. All scripts are deployed in **AWS Lambda**, and orchestrated by **AWS Step Functions state machines**.
 
