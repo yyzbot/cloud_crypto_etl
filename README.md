@@ -50,4 +50,4 @@ This project builds a cloud-native pipeline that extracts real-time cryptocurren
 - You should see a state machine named `crypto_etl_state_machine_light`.
 - Click it then choose `Start execution`, name your execution differently to history records then proceed.
 - For security concern minimum permissions are granted, you can't access Lambda functions involved or logs of the execution, but other details of the execution are avaialble.
-- After execution, open Looker report and click the blue three-dot on top right, select `Refresh data`, then click `FETCH_DATA` filter, you can now visualize the latest market data fetched by your run.
+- After execution, open [Crypto Market Snapshot](https://lookerstudio.google.com/s/gLuxBDnvJQg) and click the blue three-dot on top right, select `Refresh data`, then click `FETCH_DATA` filter, you can now visualize the latest market data fetched by your run.
