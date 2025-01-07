@@ -36,7 +36,7 @@ This project builds a cloud-native pipeline that extracts real-time cryptocurren
 ## Future Improvements
 
 - When cost is no longer a concern:
-   - Automate pipeline execution to enable trend analytics of snapshot data.
+   - Automate pipeline execution to fetch data at high frequency and to enable trend analytics of snapshot data.
    - Introduce **PySpark** with **AWS Glue** for big data.
 
 - Testing and quality assurance:
